@@ -6,6 +6,10 @@
     "packages/*"
   ],
   "scripts": {
+    "auto-changeset": "auto-changeset",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "publish": "changeset publish",
     "build": "pnpm -r build",
     "canary": "lerna publish --no-git-tag-version --preid `./scripts/gitBranchName.sh` prerelease",
     "clean": "rm -rf node_modules packages/**/node_modules packages/**/dist",
@@ -16,13 +20,12 @@
     "setup": "lerna bootstrap",
     "test": "pnpm -r test",
     "test:ci": "jest --ci --runInBand --reporters=default --reporters=jest-junit",
-    "util:fresh": "pnpm clean && pnpm && pnpm build",
-    "changeset": "changeset",
-    "version": "changeset version",
-    "publish": "changeset publish"
+    "util:fresh": "pnpm clean && pnpm && pnpm build"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.7",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@types/jest": "^29.5.14",
     "husky": "^3.0.9",
     "jest": "^29.7.0",

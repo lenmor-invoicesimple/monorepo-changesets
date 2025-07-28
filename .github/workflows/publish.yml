@@ -12,12 +12,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Required for changesets to compare commits
+          fetch-depth: 0 # Required for git diff and changeset comparison
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '20'
           cache: 'pnpm'
 
       - name: Install pnpm
@@ -28,6 +28,11 @@ jobs:
 
       - name: Build packages
         run: pnpm build
+
+      - name: Generate changesets
+        run: pnpm auto-changeset
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create versions and changelogs
         run: pnpm changeset version
