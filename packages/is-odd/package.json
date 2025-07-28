@@ -1,0 +1,33 @@
+{
+  "name": "@lenmor-invoicesimple/is-odd-2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lenmor-invoicesimple/monorepo-changesets",
+    "directory": "packages/is-odd"
+  },
+  "version": "0.0.0",
+  "description": "is odd package",
+  "author": "Lenmor Dimanalata <lenmor@invoicesimple.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/is-odd-2.js",
+  "types": "dist/is-odd-2.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^30.0.5",
+    "typescript": "^5.8.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
