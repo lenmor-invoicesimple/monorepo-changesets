@@ -6,6 +6,7 @@
     "packages/*"
   ],
   "scripts": {
+    "ci:publish": "pnpm publish -r",
     "auto-changeset": "auto-changeset",
     "changeset": "changeset",
     "version": "changeset version",
