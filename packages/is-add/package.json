@@ -3,7 +3,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/lenmor-invoicesimple/monorepo-changesets",
-    "directory": "packages/is-add-2"
+    "directory": "packages/is-add"
   },
   "version": "0.0.0",
   "description": "is add package",
