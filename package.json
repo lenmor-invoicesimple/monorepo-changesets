@@ -6,11 +6,11 @@
     "packages/*"
   ],
   "scripts": {
-    "ci:publish": "pnpm build && changeset version && changeset publish",
+    "publish": "pnpm build && changeset version && changeset publish",
     "auto-changeset": "auto-changeset",
     "changeset": "changeset",
-    "version": "changeset version",
-    "publish": "changeset publish",
+    "ci:version": "changeset version",
+    "ci:publish": "pnpm build && changeset publish",
     "build": "pnpm -r build",
     "canary": "lerna publish --no-git-tag-version --preid `./scripts/gitBranchName.sh` prerelease",
     "clean": "rm -rf node_modules packages/**/node_modules packages/**/dist",
