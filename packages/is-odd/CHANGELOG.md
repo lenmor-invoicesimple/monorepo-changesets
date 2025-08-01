@@ -1,5 +1,12 @@
 # @lenmor-invoicesimple/is-odd-2
 
+## 1.1.0
+
+### Minor Changes
+
+- e392efc: minor changes for odd
+- d39995e: reaera
+
 ## 1.0.1
 
 ### Patch Changes
