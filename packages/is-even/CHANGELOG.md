@@ -1,5 +1,12 @@
 # @lenmor-invoicesimple/is-even-2
 
+## 0.0.6
+
+### Patch Changes
+
+- Updated dependencies [dff6af3]
+  - @lenmor-invoicesimple/is-odd-2@1.2.0
+
 ## 0.0.5
 
 ### Patch Changes
