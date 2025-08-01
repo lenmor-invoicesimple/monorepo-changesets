@@ -1,5 +1,13 @@
 # README
 
+## PR flow
+
+- use `pr/**` branching
+
+## Direct publish flow
+
+- use `auto/**` branching
+
 1. Make changes to package(s)
 2. Run changeset CLI, which prompts for which packages, what versions to bump (similar to Lerna)
 3. This creates a markdown file which is the “change set”
