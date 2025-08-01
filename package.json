@@ -6,7 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "publish": "pnpm build && changeset version && changeset publish",
+    "publish": "pnpm build && changeset publish",
     "auto-changeset": "auto-changeset",
     "changeset": "changeset",
     "ci:version": "changeset version",
