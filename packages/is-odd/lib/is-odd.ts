@@ -1,4 +1,4 @@
-export const AA = 123456
+export const AA = 1234567
 
 export function isOdd(num: number): boolean {
   console.log("logic changed")
