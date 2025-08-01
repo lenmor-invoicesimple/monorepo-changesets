@@ -50,14 +50,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create a publish PR with changesets
-        id: changesets
         uses: changesets/action@v1
-        with:
-          commit: "chore: update versions"
-          title: "chore: update versions"
-          version: pnpm ci:version
-          publish: pnpm ci:publish
-          createGithubReleases: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # with:
+        #   commit: "chore: update versions"
+        #   title: "chore: update versions"
+        #   version: pnpm ci:version
+        #   publish: pnpm ci:publish
+        #   createGithubReleases: true
       # publish with changesets
       # - name: Publish packages with changesets
       #   run: pnpm ci:publish
