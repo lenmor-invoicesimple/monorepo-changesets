@@ -1,5 +1,11 @@
 # @lenmor-invoicesimple/is-odd-2
 
+## 1.8.0
+
+### Minor Changes
+
+- 554f155: test
+
 ## 1.7.0
 
 ### Minor Changes
